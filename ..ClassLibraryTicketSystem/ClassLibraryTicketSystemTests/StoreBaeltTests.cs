@@ -17,14 +17,10 @@ namespace StoreBaeltTicketLibrary.Tests
         {
             Vehicle v=new Car();
             v.Brobizz = false;
-            v.Date=DateTime.Today;
+            v.Date=DateTime.Parse("2021-09-26");
             double expected = 240;
 
-            if (v.Date.DayOfWeek == DayOfWeek.Saturday || v.Date.DayOfWeek == DayOfWeek.Sunday)
-            {
-                
-                expected *= 0.8;
-            }
+            expected *= 0.8;
 
             
 
@@ -32,6 +28,21 @@ namespace StoreBaeltTicketLibrary.Tests
         
 
             Assert.AreEqual(expected,s.CarDiscountedPrice(v));
+        }
+        [TestMethod()]
+        public void StoreBaeltTest_NotWeekend()
+        {
+            Vehicle v = new Car();
+            v.Brobizz = false;
+            v.Date = DateTime.Parse("2021-09-27");
+            double expected = 240;
+
+
+
+            StoreBaelt s = new StoreBaelt();
+
+
+            Assert.AreEqual(expected, s.CarDiscountedPrice(v));
         }
     }
 }

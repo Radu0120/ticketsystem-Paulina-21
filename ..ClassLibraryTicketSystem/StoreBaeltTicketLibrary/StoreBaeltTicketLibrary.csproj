@@ -4,6 +4,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\Radu\Source\Repos\ticketsystem-Paulina-21\..ClassLibraryTicketSystem\StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="ClassLibraryTicketSystem">
       <HintPath>..\ClassLibraryTicketSystem\bin\Debug\net5.0\ClassLibraryTicketSystem.dll</HintPath>

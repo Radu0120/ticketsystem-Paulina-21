@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\Zealand\3RD SEMESTER\.Projects\ClassLibraryTicketSystem\ClassLibraryTicketSystem.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\Radu\Source\Repos\ticketsystem-Paulina-21\..ClassLibraryTicketSystem\ClassLibraryTicketSystem\ClassLibraryTicketSystem.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
